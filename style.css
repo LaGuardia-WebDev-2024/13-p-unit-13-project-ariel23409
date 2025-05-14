@@ -1,22 +1,46 @@
-#movie-result {
-  background: rgb(244, 98, 181);
+#show-result {
+  background-image: url("https://wallpapers.com/images/featured/aesthetic-iphone-background-nzu8qe7547rksxq9.jpg");
   border: 5px solid black;
   font-size: 24px;
-  height: 160px;
-  margin-top: 10px;
+  /*   height: 160px; */
+  margin-top: 20px;
   margin-bottom: 20px;
+  font-style: italic;
+  font-family: cursive;
 }
 
 #book-result {
-  background: rgb(196, 159, 255);
+  background-image: url("https://wallpapercave.com/wp/wp10785473.jpg");
   border: 5px solid black;
   font-size: 24px;
-  height: 160px;
-  margin-top: 10px;
+  /*   height: 160px;  */
+  margin-top: 20px;
   margin-bottom: 20px;
+  font-style: italic;
+  font-family: cursive;
+}
+#personality-result {
+  background-image: url("https://i.pinimg.com/1200x/3f/2d/9c/3f2d9c61b45bc9be49d2011f6ae11842.jpg");
+  border: 5px solid black;
+  font-size: 24px;
+  /*   height: 160px;  */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-family: cursive;
 }
 
 hr {
   height: 5px;
   background-color: black;
+}
+
+body {
+  background-image: url("https://marketplace.canva.com/EAFZcmTpKas/1/0/1600w/canva-video-intro-portada-fondo-background-simple-rosa-dorado-U93tpA4NMDA.jpg");
+}
+
+h1 {
+  font-family: fantasy;
+  font-style: italic;
+  color: rgb(211, 166, 227);
 }
