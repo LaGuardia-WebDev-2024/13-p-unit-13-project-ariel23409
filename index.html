@@ -21,50 +21,119 @@ Select ONE Additional Feature to Add
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Quiz About [Me]</h1>
+    <h1>Under The Sea🧜‍♀️🌊</h1>
     <hr />
-    <!-- Movie Question -->
-    <form id="movie-form">
+    <!-- Show Question -->
+    <form id="show-form">
       <label>
-        🎥 What is my favorite movie?
-        <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+        🎥 Which tv show do I like the most?
+        <select id="show-answer">
+          <option value="show1">Vampire diaries</option>
+          <option value="show2">Charmed</option>
+          <option value="show3">Black Lightning</option>
+          <option value="show4">Wednesday</option>
         </select>
       </label>
-      <button type="submit">Check Movie Answer</button>
+      <button type="submit">Check show Answer</button>
     </form>
-    <div id="movie-result"></div>
+    <div id="show-result">
+      <p id="show-text"></p>
+
+      <img id="show-pic" width="150" />
+    </div>
     <hr />
     <!-- Book Question -->
     <form id="book-form">
       <label>
-        📖 What is my favorite book?
+        📖 What book series interests me the most ?
         <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+          <option value="book1">The housemaid series</option>
+          <option value="book2">Kings of Sin series</option>
+          <option value="book3">Arc of Scythe series</option>
+          <option value="book4">Icebreaker Series</option>
         </select>
       </label>
       <button type="submit">Check Book Answer</button>
     </form>
-    <div id="book-result"></div>
+    <div id="book-result">
+      <p id="book-text"></p>
+
+      <img id="book-pic" width="150" />
+    </div>
+
+    <!-- Personality Question -->
+    <form id="personality-form">
+      <label>
+        😛 How would you describe my persomality in Web Dev?
+        <select id="personality-answer">
+          <option value="personality1">Weird</option>
+          <option value="personality2">Clown</option>
+          <option value="personality3">Blunt</option>
+          <option value="personality4">All of the Above</option>
+        </select>
+      </label>
+      <button type="submit">Check Personality Answer</button>
+    </form>
+    <div id="personality-result">
+      <p id="personality-text"></p>
+
+      <img id="personality-pic" width="150" />
+    </div>
+    <hr />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-      //Movie Question jQuery Code
-      $("#movie-form").on("submit", function (event) {
+      //Personality Question jQuery Code
+      $("#personality-form").on("submit", function (event) {
         event.preventDefault();
 
-        var $answer = $("#movie-answer");
+        var $answer = $("#personality-answer");
         var answer = $answer.val();
 
-        if (answer === "movie1") {
-          $("#movie-result").text("YESSSS!");
-        } else {
-          $("#movie-result").text("Try Again!");
+        if (answer === "personality4") {
+          $("#personality-text").text("OH KURRRRRRRR!");
+          $("#personality-pic")
+            .hide()
+            .attr(
+              "src",
+              "https://em-content.zobj.net/source/facebook/230/smiling-face-with-smiling-eyes-and-hand-covering-mouth_1f92d.png"
+            )
+            .show(2000);
+          $("img").animate(
+            {
+              width: "300px",
+              marginLeft:"20px",
+              borderWidth:"20px"
+            }, 
+            2500
+            
+          );
+        } else if (answer === "personality3") {
+          $("#personality-text").text("AND AHHH OOOPPPPP JUMPSCARE A-");
+          $("#personality-pic")
+            .hide()
+            .attr(
+              "src",
+              "https://i.pinimg.com/736x/28/3f/d4/283fd43afd13a92e3a40f176a80dd6d5.jpg"
+            )
+            .show(2000);
+        } else if (answer === "personality2") {
+          $("#personality-text").text("AND AHHH OOOPPPPP JUMPSCARE A-");
+          $("#personality-pic")
+            .hide()
+            .attr(
+              "src",
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHf2-2GQ3Nr7LFluX9XK4h0HB-hQg-ks3a_yH00_5_jxygEjepsV7mS8s87rT2tf6C1QI&usqp=CAU"
+            )
+            .show(2000);
+        } else if (answer === "personality1") {
+          $("#personality-text").text("AND AHHH OOOPPPPP JUMPSCARE A-");
+          $("#personality-pic")
+            .hide()
+            .attr(
+              "src",
+              "https://i.pinimg.com/236x/39/33/00/39330081ec08864a1bab6ba9f9117303.jpg"
+            )
+            .show(2000);
         }
       });
 
@@ -76,9 +145,97 @@ Select ONE Additional Feature to Add
         var answer = $answer.val();
 
         if (answer === "book1") {
-          $("#book-result").text("YESSSS!");
-        } else {
-          $("#book-result").text("Try Again!");
+          $("#book-text").text("AND AHHH OOOPPPPP JUMPSCARE A-");
+          $("#book-pic")
+            .hide()
+            .attr(
+              "src",
+              "https://el-fagala.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-24-at-14.07.05_3eab3567.jpg"
+            )
+            .show(2000);
+         $("#book-pic").slideDown(1000); 
+           
+        } else if (answer === "book2") {
+          $("#book-text").text("OH KURRRRRRRR!");
+          $("#book-pic")
+            .hide()
+            .attr(
+              "src",
+              "https://booksworldae.com/wp-content/uploads/2025/04/Kings-of-Sin-Series-1.png"
+            )
+            .show(2000);
+          $("img").animate(
+            {
+              width: "300px",
+              marginLeft:"20px",
+              borderWidth:"20px"
+            }, 
+            2500
+            
+          );
+        } else if (answer === "book3") {
+          $("#book-text").text("AND AHHH OOOPPPPP JUMPSCARE A-");
+          $("#book-pic")
+            .hide()
+            .attr(
+              "src",
+              "https://images-na.ssl-images-amazon.com/images/I/61Eds21B9CL._AC_UL210_SR210,210_.jpg"
+            )
+            .show(2000);
+        } else if (answer === "book4") {
+          $("#book-text").text("AND AHHH OOOPPPPP JUMPSCARE A-");
+          $("#book-pic")
+            .hide()
+            .attr(
+              "src",
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRziafkFWfQ3Uv1vsRfcsl5_Hrnp2L7NnpDKQ&s"
+            )
+            .show(2000);
+        }
+      });
+      //Show Question jQuery Code
+      $("#show-form").on("submit", function (event) {
+        event.preventDefault();
+
+        var $answer = $("#show-answer");
+        var answer = $answer.val();
+
+        if (answer === "show4") {
+          $("#show-text").text("OH KURRRRRRRRR!");
+          $("#show-pic")
+            .hide()
+            .attr(
+              "src",
+              "https://i.guim.co.uk/img/media/4df0f504cefb4a5a19966d7dd0f8787b45c6d4ff/259_0_3000_1800/master/3000.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=39bc597b181b507e50198d6f4984274d"
+            )
+            .show(2000);
+        } else if (answer === "show3") {
+          $("#show-text").text("AND AHHH OOOPPPPP JUMPSCARE A-");
+          $("#show-pic")
+            .hide()
+            .attr(
+              "src",
+              "https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABRXOravwNKt4DQlIm603PFrVrUSsI7x62l5IIAfK5R-Fk0SyWU8XwGNuupcfKWG-me7GlJ9jZ4vClV-LTAgKdTJiUWcfUzySeSIt.jpg?r=46d"
+            )
+            .show(2000);
+        } else if (answer === "show2") {
+          $("#show-text").text("AND AHHH OOOPPPPP JUMPSCARE A-");
+          $("#show-pic")
+            .hide()
+            .attr(
+              "src",
+              "https://m.media-amazon.com/images/M/MV5BOGIzODRkYWUtMzc0MS00NjMxLWExOGMtNWY3NGUyOTRkYzBhXkEyXkFqcGc@._V1_.jpg"
+            )
+            .show(2000);
+        } else if (answer === "show1") {
+          $("#show-text").text("AND AHHH OOOPPPPP JUMPSCARE A-");
+          $("#show-pic")
+            .hide()
+            .attr(
+              "src",
+              "https://www.slugmag.com/wp/wp-content/uploads/2015/09/tvd-header.jpg"
+            )
+            .show(2000);
         }
       });
     </script>
